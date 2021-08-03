@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Navbar />
       <Header />
-      <Route path="/" render={()=> {
+      <Route path="/about" render={()=> {
         return <Section name="About Me"
         content={`<div class="bodyt">
         <p>Hi, My name is Joseph Valancy, and this is why you should hire me.</p>
@@ -28,6 +28,15 @@ function App() {
         </div>`}
         />
       }}/>
+    <Route path="/contact" render={()=> {
+      return <Section name="Contact Me"
+      content={`<section class="contactme">
+            <div>
+                <a href="assets/pdfs/ValancyResume2020_4.pdf" target="_blank">Download my resume Here!</a>
+            </div>
+        </section>`}
+      />
+    }}/>
     </Router>
   );
 }
