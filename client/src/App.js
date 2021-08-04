@@ -37,6 +37,39 @@ function App() {
         </section>`}
       />
     }}/>
+
+    <Route path="/arttitle" render={()=> {
+      return <Section name="My art"
+      content={`<section class="art" id="art">
+      <section class="artstuff">
+          <header>Laugh Generator</header>
+          <img src="assets/images/Laugh.png" alt="A joke and meme generator">
+          <p>A collaborative Team Project where we created a site that grabs jokes and memes from external APIs, lets you filter them based on content, and lets you share them via social media.</p>
+          <a href="https://nmr-code.github.io/Laugh-Generator/" target="_blank">Check it out live Here!</a>
+          <a href="https://github.com/Jvala2/Laugh-Generator/" target="_blank">And on GitHub!</a>
+      </section>
+      <section class="artstuff">
+          <header>Word Day Schedule Calendar App</header>
+          <img src="assets/images/work.png" alt="A calendar app">
+          <p>An html site/app that lets you store your daily tasks and keeps track of the current time.</p>
+          <a href="https://jvala2.github.io/Daily-Calendar-App/" target="_blank">Check it out live Here!</a>
+          <a href="https://github.com/Jvala2/Daily-Calendar-App/" target="_blank">And on GitHub!</a>
+      </section>
+      <section class="artstuff">
+          <header>Filler Art</header>
+          <img src="assets/images/3olantern.png" alt="Don't forget to write alt text">
+          <p>Filler Pumpkins</p>
+      </section>
+      <section class="artstuff">
+          <header>Filler Art</header>
+          <img src="assets/images/3olantern.png" alt="Don't forget to write alt text">
+          <p>Filler Pumpkins</p>
+      </section>
+
+  </section>`}
+      />
+    }}/>
+
     </Router>
   );
 }
